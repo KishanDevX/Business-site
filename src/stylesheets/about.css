@@ -1,0 +1,130 @@
+/* .skill-show-box {
+  display: flex;
+  overflow: auto;
+  gap: var(--gap-md);
+}
+
+.skill-card {
+  border: 2px solid black;
+}
+
+.skill-title {
+  width: 15rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: var(--txt-size-xl);
+  color: var(--txt-color-primary);
+}
+
+.skill-about {
+  background-color: yellow;
+  width: 13rem;
+  height: 4rem;
+  overflow-y: auto;
+  font-size: var(--txt-size-md);
+}
+
+.skill-tags {
+  width: 15rem;
+  height: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--txt-size-md);
+  overflow-y: auto;
+  background-color: rebeccapurple;
+}
+
+.skill-tag {
+  background-color: red;
+  margin: 0 0 0.5rem 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: var(--txt-size-md);
+  border-radius: var(--radius-lg);
+}
+
+.skill-bottom-part {
+  background-color: green;
+  width: 100%;
+} */
+
+#about-sec {
+  padding: 0;
+  padding-left: var(--gap-md);
+}
+
+.skill-show-box {
+  display: flex;
+  overflow: auto;
+  gap: var(--gap-md);
+  padding: 1rem 0;
+}
+
+.skill-card {
+  flex-shrink: 0;
+  height: 17rem;
+  width: 16rem;
+  border: 5px solid var(--light-color-2);
+  display: flex;
+  border-radius: var(--radius-md);
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--light-color-2);
+}
+
+.skill-top {
+  background-color: #e0f1ff;
+  border-radius: var(--radius-md);
+  /* background-color: red; */
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-head {
+  /* background-color: red; */
+  width: 95%;
+  /* margin-top: 0.3rem; */
+  padding: var(--gap-md) var(--gap-sm) var(--gap-xsm) var(--gap-sm);
+  font-size: var(--gap-md);
+  white-space: nowrap;
+  overflow: auto;
+  color: var(--txt-color-primary);
+  font-weight: var(--font-bold-sm);
+}
+
+.skill-about {
+  /* background-color: red; */
+  padding: 0 var(--gap-sm);
+  height: 5rem;
+  overflow-y: auto;
+  font-size: var(--gap-sm);
+  color: var(--txt-color-secondary);
+}
+
+.skill-bottom {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  padding: 0 var(--gap-sm);
+  font-size: var(--txt-size-md);
+  width: 100%;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: var(--gap-xsm);
+  padding: 0 var(--gap-md) 10px var(--gap-md);
+}
+
+.tag {
+  /* background-color: #bfe9fe; */
+  font-size: var(--txt-size-sm);
+  padding: 5px 10px;
+  color: var(--txt-color-secondary);
+  border-radius: var(--radius-md);
+}

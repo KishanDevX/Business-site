@@ -1,0 +1,46 @@
+#projects-sec {
+  padding: 0;
+  padding-left: var(--gap-md);
+}
+
+.pro-catalog {
+  margin: var(--def-size-lg) 0;
+}
+
+.pro-listing-box {
+  height: 12rem;
+  margin-bottom: var(--def-size-sm);
+  display: flex;
+  gap: var(--gap-md);
+  overflow-x: auto;
+}
+
+.project-card {
+  width: 22rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.pro-card-name {
+  margin-top: var(--def-size-sm);
+  font-weight: var(--font-bold-md);
+  font-size: var(--txt-size-md);
+}
+
+.pro-card-desc {
+  max-height: 70%;
+  margin-bottom: var(--def-size-sm);
+  overflow-y: auto;
+  color: var(--txt-color-secondary);
+  font-size: var(--txt-size-sm);
+}
+
+.pro-card-btns {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.pro-card-btns .icon {
+  height: var(--txt-size-md);
+  margin-right: 0.3rem;
+}

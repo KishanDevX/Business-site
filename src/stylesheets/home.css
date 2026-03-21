@@ -1,0 +1,12 @@
+#home-sec {
+  height: 100dvh;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-part {
+  border: 2px solid black;
+  flex: 1;
+  min-width: 25rem;
+}

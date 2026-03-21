@@ -1,0 +1,101 @@
+footer {
+  --text-high: rgba(255, 255, 255, 0.95); /* headings / important text */
+  --text-medium: rgba(255, 255, 255, 0.8); /* normal paragraph text */
+  --text-low: rgba(255, 255, 255, 0.6); /* secondary info / labels */
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: var(--tb-pad-md) 0;
+}
+
+.foot-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.foot-details-part {
+  display: flex;
+}
+
+.foot-intro-part {
+  /* background-color: yellow; */
+  width: 100%;
+  max-width: 25rem;
+  padding: var(--tb-pad-sm) var(--lr-pad-sm);
+}
+
+.foot-intro-part h3 {
+  font-size: var(--txt-size-lg);
+  font-weight: var(--font-bold-md);
+  color: var(--txt-color-light-600);
+}
+
+.foot-intro-part p {
+  font-size: var(--txt-size-md);
+  font-weight: var(--font-bold-sm);
+  color: var(--txt-color-light-300);
+}
+
+.foot-details-part {
+  /* background-color: green; */
+  padding: var(--tb-pad-sm) var(--lr-pad-sm);
+  width: 100%;
+  display: flex;
+  gap: var(--gap-lg);
+  max-width: 25rem;
+}
+
+.foot-details-part h5 {
+  font-size: var(--txt-size-md);
+  color: var(--txt-color-light-600);
+  font-weight: var(--font-bold-sm);
+  margin-bottom: 0.4rem;
+}
+
+.get-in-touchCard ul li {
+  display: flex;
+  align-items: center;
+  font-size: var(--txt-size-sm);
+  color: var(--txt-color-light-100);
+}
+
+.get-in-touchCard ul .icon {
+  height: 1rem;
+  margin-top: 0.3rem;
+  margin-right: 0.2rem;
+}
+
+.quick-linksCard ul {
+  display: flex;
+  font-size: var(--txt-size-sm);
+  flex-direction: column;
+  color: var(--txt-color-light-100);
+}
+
+.quick-linksCard ul li {
+  padding: 0.2rem;
+}
+
+.foot-bottom {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-bottom hr {
+  width: 80%;
+  border: none;
+  margin-top: 1rem;
+  border-top: 1px solid var(--txt-color-light-100);
+}
+
+.foot-bottom span {
+  font-size: var(--txt-size-xsm);
+  padding-top: 0.8rem;
+  color: var(--txt-color-light-100);
+}
