@@ -168,11 +168,13 @@ const Availability_card = () => {
 const Contact = () => {
   return (
     <section id="contact-sec">
-      <h2 className="head1">Contact us now</h2>
-      <p className="desc1">
-        We are listening, contact us freely in our business hours for any type
-        of queries or building order.
-      </p>
+      <div className="intro-cover">
+        <h2 className="head1">Contact us now</h2>
+        <p className="desc1">
+          We are listening, contact us freely in our business hours for any type
+          of queries or building order.
+        </p>
+      </div>
       <div className="contact-parts">
         <Contact_form_card />
         <div className="social-link-part">

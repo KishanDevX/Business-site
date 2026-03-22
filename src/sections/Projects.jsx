@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheets/projects.css";
 
+// <== ICONS (open)
 const PreviewIcon = () => {
   return (
     <svg
@@ -37,82 +38,86 @@ const SrcCodeIcon = () => {
     </svg>
   );
 };
+// close ==>
 
-const projects_data = [
-  {
-    title: "UI Clones",
-    desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
-    projects: [
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-    ],
-  },
-  {
-    title: "Freelance Works",
-    desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
-    projects: [
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-    ],
-  },
-  {
-    title: "Personal Projects",
-    desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
-    projects: [
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-      {
-        name: "Calculator",
-        desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-        previewLink: "#",
-        srcCodeLink: "#",
-      },
-    ],
-  },
-];
+// <== PROJECT DATA (open)
+const UI_clones = {
+  title: "UI Clones",
+  desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
+  projects: [
+    {
+      name: "Whatsapp",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "https://bw-whatsapp-clone.vercel.app/",
+      srcCodeLink: "https://github.com/KishanDevX/BW-Whatsapp-clone.git",
+    },
+    {
+      name: "Instagram",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "https://bw-instagram-clone.vercel.app/",
+      srcCodeLink: "https://github.com/KishanDevX/BW-Instagram-clone.git",
+    },
+    {
+      name: "Youtube",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+  ],
+};
 
+const Freelance_works = {
+  title: "Freelance Works",
+  desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
+  projects: [
+    {
+      name: "Calculator",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+    {
+      name: "Calculator",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+    {
+      name: "Calculator",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+  ],
+};
+
+const Other_tools = {
+  title: "Personal Projects",
+  desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
+  projects: [
+    {
+      name: "Calculator",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+    {
+      name: "Calculator",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+    {
+      name: "Calculator",
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+  ],
+};
+// close ==>
+
+// <== PROJECT CARD (open)
 const Project_card = ({ name, desc, previewLink, srcCodeLink }) => {
   return (
     <div className="project-card card1">
@@ -145,6 +150,7 @@ const Project_card = ({ name, desc, previewLink, srcCodeLink }) => {
     </div>
   );
 };
+// close ==>
 
 const Project_catalog = ({ title, desc, projects }) => {
   return (
@@ -171,18 +177,28 @@ const Project_catalog = ({ title, desc, projects }) => {
 const Projects = () => {
   return (
     <section id="projects-sec">
-      <h3 className="pro-sec-head head1">Projects made by me</h3>
-      <p className="pro-sec-desc desc1">
-        below you will get some amazing builds of mine where i have reflected my
-        ideas into code, just click the preview or explore the source code.
-      </p>
-      {projects_data.map((catalog) => (
-        <Project_catalog
-          title={catalog.title}
-          desc={catalog.desc}
-          projects={catalog.projects}
-        />
-      ))}
+      <div className="intro-cover">
+        <h3 className="pro-sec-head head1">Projects made by me</h3>
+        <p className="pro-sec-desc desc1">
+          below you will get some amazing builds of mine where i have reflected
+          my ideas into code, just click the preview or explore the source code.
+        </p>
+      </div>
+      <Project_catalog
+        title={UI_clones.title}
+        desc={UI_clones.desc}
+        projects={UI_clones.projects}
+      />
+      <Project_catalog
+        title={Freelance_works.title}
+        desc={Freelance_works.desc}
+        projects={Freelance_works.projects}
+      />
+      <Project_catalog
+        title={Other_tools.title}
+        desc={Other_tools.desc}
+        projects={Other_tools.projects}
+      />
     </section>
   );
 };

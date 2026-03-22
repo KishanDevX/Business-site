@@ -8,7 +8,7 @@
 }
 
 .pro-listing-box {
-  height: 12rem;
+  /* height: 12rem; */
   margin-bottom: var(--def-size-sm);
   display: flex;
   gap: var(--gap-md);
@@ -43,4 +43,9 @@
 .pro-card-btns .icon {
   height: var(--txt-size-md);
   margin-right: 0.3rem;
+}
+
+.intro-cover {
+  border-left: 0.4rem solid var(--primary-color);
+  padding-left: var(--gap-xsm);
 }

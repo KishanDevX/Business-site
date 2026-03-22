@@ -171,3 +171,8 @@ section {
   color: var(--txt-color-primary);
   border: 2px solid var(--txt-color-primary);
 }
+
+.intro-cover {
+  border-left: 0.4rem solid var(--primary-color);
+  padding-left: var(--gap-sm);
+}

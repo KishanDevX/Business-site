@@ -2,11 +2,18 @@
   height: 100dvh;
   /* background-color: red; */
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .home-part {
   border: 2px solid black;
   flex: 1;
-  min-width: 25rem;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  #home-sec {
+    flex-direction: row;
+  }
 }
