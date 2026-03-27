@@ -1,7 +1,11 @@
 import React from "react";
 import "../stylesheets/projects.css";
+import whatsapp_icon from "../assets/icons/whatsapp.png";
+import instagram_icon from "../assets/icons/instagram.png";
+import facebook_icon from "../assets/icons/facebook.png";
+import youtube_icon from "../assets/icons/youtube.png";
 
-// <== ICONS (open)
+// ICONS
 const PreviewIcon = () => {
   return (
     <svg
@@ -38,27 +42,36 @@ const SrcCodeIcon = () => {
     </svg>
   );
 };
-// close ==>
 
-// <== PROJECT DATA (open)
+// PROJECT DATA
 const UI_clones = {
   title: "UI Clones",
   desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
   projects: [
     {
       name: "Whatsapp",
+      visual: whatsapp_icon,
       desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
       previewLink: "https://bw-whatsapp-clone.vercel.app/",
       srcCodeLink: "https://github.com/KishanDevX/BW-Whatsapp-clone.git",
     },
     {
       name: "Instagram",
+      visual: instagram_icon,
       desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
       previewLink: "https://bw-instagram-clone.vercel.app/",
       srcCodeLink: "https://github.com/KishanDevX/BW-Instagram-clone.git",
     },
     {
       name: "Youtube",
+      visual: youtube_icon,
+      desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
+      previewLink: "#",
+      srcCodeLink: "#",
+    },
+    {
+      name: "Facebook",
+      visual: facebook_icon,
       desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
       previewLink: "#",
       srcCodeLink: "#",
@@ -115,14 +128,23 @@ const Other_tools = {
     },
   ],
 };
-// close ==>
 
-// <== PROJECT CARD (open)
-const Project_card = ({ name, desc, previewLink, srcCodeLink }) => {
+// PROJECT CARD
+const Project_card = ({ name, desc, previewLink, srcCodeLink, visual }) => {
   return (
     <div className="project-card card1">
-      <div className="pro-card-name">{name}</div>
-      <div className="pro-card-desc">{desc}</div>
+      <div className="project-info">
+        {visual && (
+          <div className="visual-info">
+            {" "}
+            <img src={visual} alt={name} />{" "}
+          </div>
+        )}
+        <div className="text-info">
+          <div className="pro-card-name">{name}</div>
+          <div className="pro-card-desc">{desc}</div>
+        </div>
+      </div>
       <div className="pro-card-btns">
         <a
           href={previewLink}
@@ -150,7 +172,6 @@ const Project_card = ({ name, desc, previewLink, srcCodeLink }) => {
     </div>
   );
 };
-// close ==>
 
 const Project_catalog = ({ title, desc, projects }) => {
   return (
@@ -160,6 +181,7 @@ const Project_catalog = ({ title, desc, projects }) => {
           <Project_card
             key={`project${idx}`}
             name={project.name}
+            visual={project.visual}
             desc={project.desc}
             previewLink={project.previewLink}
             srcCodeLink={project.srcCodeLink}

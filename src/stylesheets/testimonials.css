@@ -1,7 +1,7 @@
-.testimonial-sec-head {
+/* .testimonial-sec-head {
   text-align: center;
   margin-bottom: var(--def-size-md);
-}
+} */
 
 .testi-card-box {
   display: flex;
@@ -9,6 +9,13 @@
   flex-wrap: wrap;
   /* background-color: red; */
   justify-content: center;
+}
+
+.no-testimonials p {
+  margin: var(--gap-lg);
+  width: 60%;
+  color: var(--txt-color-secondary);
+  font-size: var(--def-size-md);
 }
 
 .testimonial-card {

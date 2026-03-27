@@ -1,48 +1,50 @@
 import React from "react";
 import "../stylesheets/testimonials.css";
 
-const testimonials_data = [
-  {
-    ratings: 5,
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-    profile_pic: "/assets/testi1.jpg",
-    client_name: "John Doe",
-    client_title: "CEO, Company Inc.",
-  },
-  {
-    ratings: 4,
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-    profile_pic: "/assets/testi2.jpg",
-    client_name: "Jane Smith",
-    client_title: "Marketing Manager, Business Co.",
-  },
-  {
-    ratings: 1,
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-    profile_pic: "/assets/testi3.jpg",
-    client_name: "Alice Johnson",
-    client_title: "Product Designer, Design Studio",
-  },
-  {
-    ratings: 1,
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-    profile_pic: "/assets/testi3.jpg",
-    client_name: "Alice Johnson",
-    client_title: "Product Designer, Design Studio",
-  },
-  {
-    ratings: 1,
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-    profile_pic: "/assets/testi3.jpg",
-    client_name: "Alice Johnson",
-    client_title: "Product Designer, Design Studio",
-  },
-];
+// const testimonials_data = [
+//   {
+//     ratings: 5,
+//     message:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+//     profile_pic: "/assets/testi1.jpg",
+//     client_name: "John Doe",
+//     client_title: "CEO, Company Inc.",
+//   },
+//   {
+//     ratings: 4,
+//     message:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+//     profile_pic: "/assets/testi2.jpg",
+//     client_name: "Jane Smith",
+//     client_title: "Marketing Manager, Business Co.",
+//   },
+//   {
+//     ratings: 1,
+//     message:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+//     profile_pic: "/assets/testi3.jpg",
+//     client_name: "Alice Johnson",
+//     client_title: "Product Designer, Design Studio",
+//   },
+//   {
+//     ratings: 1,
+//     message:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+//     profile_pic: "/assets/testi3.jpg",
+//     client_name: "Alice Johnson",
+//     client_title: "Product Designer, Design Studio",
+//   },
+//   {
+//     ratings: 1,
+//     message:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
+//     profile_pic: "/assets/testi3.jpg",
+//     client_name: "Alice Johnson",
+//     client_title: "Product Designer, Design Studio",
+//   },
+// ];
+
+const testimonials_data = [];
 
 const StarIcon = () => {
   return (
@@ -112,11 +114,29 @@ const Testimonial_card = ({
 const Testimonials = () => {
   return (
     <section className="testimonial-sec">
-      <h3 className="testimonial-sec-head head1">What our clients say</h3>
+      <div className="intro-cover">
+        <h3 className="testimonial-sec-head head1">What our clients say</h3>
+        <p className="desc1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          dolore labore quidem recusandae, veniam nesciunt nisi, quas incidunt
+          suscipit repellat distinctio, quasi doloremque animi optio architecto?
+          Dicta vel quibusdam ratione!
+        </p>
+      </div>
       <div className="testi-card-box">
-        {testimonials_data.map((testimonial, index) => (
-          <Testimonial_card key={index} {...testimonial} />
-        ))}
+        {testimonials_data.length === 0 ? (
+          <div className="no-testimonials">
+            <p>
+              No testimonials yet, be our first customer to deliver us your
+              valuable feedback :)
+            </p>
+            <a href="">order now</a>
+          </div>
+        ) : (
+          testimonials_data.map((testimonial, index) => (
+            <Testimonial_card key={index} {...testimonial} />
+          ))
+        )}
       </div>
     </section>
   );
