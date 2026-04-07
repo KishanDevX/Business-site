@@ -66,8 +66,8 @@ const UI_clones = {
       name: "Youtube",
       visual: youtube_icon,
       desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-      previewLink: "#",
-      srcCodeLink: "#",
+      previewLink: "https://bw-youtube-clone.vercel.app/",
+      srcCodeLink: "https://github.com/KishanDevX/BW-Youtube-clone.git",
     },
     {
       name: "Facebook",
