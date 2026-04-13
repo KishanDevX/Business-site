@@ -116,7 +116,7 @@ const QuickLinks = () => {
           <a href="">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="https://hilarious-queijadas-218c80.netlify.app/">Projects</a>
         </li>
         <li>
           <a href="">Contact</a>
