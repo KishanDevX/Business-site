@@ -109,10 +109,10 @@ const Other_tools = {
   desc: "Here I have listed some of my best accurately clones porjects of existing softwares that include well known social media apps and some other tools.",
   projects: [
     {
-      name: "Calculator",
+      name: "School Attendance",
       desc: "an amazing way of calculating big numbers, doing complex arithmetic calculations in few miliseconds, don't wait hurry up and stop wasting your time on old and manual calculation.",
-      previewLink: "#",
-      srcCodeLink: "#",
+      previewLink: "https://attendence78h43.netlify.app/",
+      srcCodeLink: "https://github.com/KishanDevX/BW-Attendance-tool.git",
     },
     {
       name: "Calculator",
